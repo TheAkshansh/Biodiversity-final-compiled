@@ -310,7 +310,7 @@
 .zoom-in-to-container1 {
   width: 72px;
   position: relative;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-weight: 300;
   display: inline-block;
 }
@@ -883,13 +883,15 @@
 .enter-you-email1 {
   font-weight: 500;
   position: relative;
-  text-transform: capitalize;
+  /* text-transform: lowercase; */
   display: inline-block;
 }
 .enter-you-email1 {
   min-width: 66px;
+  /* text-transform: lowercase; */
 }
 .email-placeholder {
+  /* text-transform: lowercase; */
   width: 185.7px;
   border: 0;
   outline: 0;

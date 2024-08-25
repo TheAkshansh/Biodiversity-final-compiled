@@ -208,16 +208,26 @@
                   <div class="blogs2">Blogs</div>
                 </div>
               </div>
-              <button class="navigation-links-inner2" id="frameButton3">
+              <button  class="navigation-links-inner2" id="myButton">
                 <div class="about-us-frame">
                   <div class="about-us2">About Us</div>
+                  <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                      window.location.href = "bio-diversity-v3.html";
+                  };
+                  </script>
                 </div>
               </button>
             </nav>
           </div>
         </div>
-        <button class="logout-button1">
+        <button id="myButto" class="logout-button1">
           <div class="log-out2">LOG OUT</div>
+          <script type="text/javascript">
+            document.getElementById("myButto").onclick = function () {
+              window.location.href = "./index.html";
+          };
+          </script>
         </button>
       </div>
     </div>

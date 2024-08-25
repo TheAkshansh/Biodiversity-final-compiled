@@ -503,7 +503,8 @@
 }
 .our-mission,
 .predict-extinction-rate {
-  align-self: stretch;
+  margin-left: ;
+  text-align: left;
   position: relative;
   text-transform: capitalize;
   font-weight: 200;
@@ -592,12 +593,14 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .our-dedicated-team,
 .our-team {
   align-self: stretch;
   position: relative;
   text-transform: capitalize;
   font-weight: 200;
+  
 }
 .our-dedicated-team {
   margin: 0;
@@ -610,6 +613,7 @@
   align-items: flex-start;
   max-width: 100%;
 }
+
 .our-team-parent {
   width: 450.3px;
   flex-direction: column;
@@ -627,7 +631,7 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
-.nikunj-our-team {
+.akshansh-our-team {
   height: 260px;
   width: 238px;
   position: relative;
@@ -664,14 +668,14 @@
   min-width: 383px;
   max-width: 100%;
 }
-.nikunj-our-team-parent {
+.akshansh-our-team-parent {
   align-self: stretch;
   flex-direction: row;
   gap: 24px;
 }
 .nikunj-dev-yadav-parent,
 .nikunj-our-team-group,
-.nikunj-our-team-parent,
+.akshansh-our-team-parent,
 .team-members {
   display: flex;
   align-items: flex-start;
@@ -701,14 +705,14 @@
   object-fit: cover;
   z-index: 1;
 }
-.riddhi-our-team-parent {
+.riddhi-our-team-group {
   align-self: stretch;
   flex-direction: row;
   justify-content: flex-start;
   gap: 21.7px;
 }
 .biodiversity-v1-inner2,
-.riddhi-our-team-parent,
+.riddhi-our-team-group,
 .team-members-parent {
   display: flex;
   align-items: flex-start;
@@ -990,17 +994,17 @@
   .rectangle-parent12 {
     gap: var(--gap-23xl);
   }
-  .nikunj-our-team {
+  .akshansh-our-team {
     flex: 1;
   }
   .nikunj-our-team-group,
-  .nikunj-our-team-parent {
+  .akshansh-our-team-parent {
     flex-wrap: wrap;
   }
   .riddhi-our-team {
     flex: 1;
   }
-  .riddhi-our-team-parent {
+  .riddhi-our-team-group {
     flex-wrap: wrap;
   }
   .ellipse-parent10 {

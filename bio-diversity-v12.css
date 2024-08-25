@@ -632,7 +632,7 @@
   flex-direction: column;
   gap: var(--gap-mid-6);
 }
-.log-out4 {
+.log-out3 {
   position: relative;
   font-size: var(--font-size-2xs-1);
   line-height: 93.86%;
@@ -644,19 +644,21 @@
   display: inline-block;
   min-width: 45px;
 }
-.logout-button2 {
+.log-out-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.log-out-wrapper {
   cursor: pointer;
   border: 0;
   padding: var(--padding-mid-5) var(--padding-23xl);
   background-color: var(--color-darkslategray-300);
   border-radius: 29.38px;
-  display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
   white-space: nowrap;
 }
-.logout-button2:hover {
+.log-out-wrapper:hover {
   background-color: var(--color-dimgray);
 }
 .menu-container-parent {

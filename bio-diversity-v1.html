@@ -356,8 +356,13 @@
               type="text"
             />
           </div>
-          <button class="subscription-button">
+          <button id="button" class="subscription-button">
             <div class="subscribe-now">Subscribe now</div>
+            <script type="text/javascript">
+              document.getElementById("button").onclick = function () {
+                location.href = "http://127.0.0.1:5502/subscribe.html";
+            };
+            </script>
           </button>
         </div>
       </div>
@@ -393,16 +398,26 @@
                   <div class="blogs">Blogs</div>
                 </div>
               </div>
-              <button class="link-categories-inner2" id="frameButton">
+              <button class="link-categories-inner2" id="myButton">
                 <div class="about-us-wrapper">
                   <div class="about-us">About Us</div>
+                  <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                      window.location.href = "bio-diversity-v3.html";
+                  };
+                  </script>
                 </div>
               </button>
             </nav>
           </div>
         </div>
-        <button class="logout-button">
+        <button id="myButto" class="logout-button">
           <div class="log-out">LOG OUT</div>
+          <script type="text/javascript">
+            document.getElementById("myButto").onclick = function () {
+              window.location.href = "./index.html";
+          };
+          </script>
         </button>
       </div>
     </div>

@@ -151,14 +151,24 @@
                     <div class="blogs3">Blogs</div>
                   </div>
                 </div>
-                <button class="about-us-wrapper1">
+                <button id="myButton" class="about-us-wrapper1">
                   <div class="about-us4">About Us</div>
+                  <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                      window.location.href = "bio-diversity-v3.html";
+                  };
+                  </script>
                 </button>
               </div>
             </div>
           </div>
-          <button class="log-out-wrapper">
+          <button id="myButto" class="log-out-wrapper">
             <div class="log-out3">LOG OUT</div>
+            <script type="text/javascript">
+              document.getElementById("myButto").onclick = function () {
+                window.location.href = "./index.html";
+            };
+            </script>
           </button>
         </div>
         <div class="rectangle-parent12">
@@ -193,17 +203,17 @@
           </div>
           <div class="frame-wrapper2">
             <div class="our-mission-parent">
-              <div class="our-mission">our mission:</div>
+              <div class="our-mission">Our mission:</div>
               <h1 class="predict-extinction-rate">
                 predict extinction rate of endangered wildlife
+              </h1>
+              <div class="our-vision">Our Vision:</div>
+              <h1 class="we-envision-a">
+                We envision a world where biodiversity is celebrated and safeguarded
               </h1>
             </div>
           </div>
         </div>
-        <div class="our-vision">our Vision:</div>
-        <h1 class="we-envision-a">
-          We envision a world where biodiversity is celebrated and safeguarded
-        </h1>
       </section>
       <div class="biodiversity-v1-inner1">
         <img
@@ -215,22 +225,21 @@
       </div>
       <section class="frame-section">
         <div class="our-team-parent">
-          <div class="our-team">our Team:</div>
+          <div class="our-team">Our Team:</div>
           <h3 class="our-dedicated-team">
-            Our dedicated team of scientists, conservationists, and volunteers
-            work tirelessly to monitor and protect endangered species.
+            Our dedicated team work tirelessly to monitor and protect endangered species.
           </h3>
         </div>
       </section>
       <section class="biodiversity-v1-inner2">
         <div class="team-members-parent">
           <div class="team-members">
-            <div class="nikunj-our-team-parent">
+            <div class="akshansh-our-team-parent">
               <img
-                class="nikunj-our-team"
+                class="akshansh-our-team"
                 loading="lazy"
                 alt=""
-                src="./public/nikunj--our-team@2x.png"
+                src="./public/akshansh--our-team@1x.png"
               />
 
               <div class="akshansh-sharma-parent">
@@ -247,7 +256,7 @@
             </div>
             <div class="nikunj-our-team-group">
               <img
-                class="nikunj-our-team"
+                class="akshansh-our-team"
                 loading="lazy"
                 alt=""
                 src="./public/nikunj--our-team-1@2x.png"
@@ -266,7 +275,7 @@
               </div>
             </div>
           </div>
-          <div class="riddhi-our-team-parent">
+          <div class="riddhi-our-team-group">
             <img
               class="riddhi-our-team"
               loading="lazy"
@@ -286,91 +295,7 @@
           </div>
         </div>
       </section>
-      <section class="biodiversity-v1-inner3">
-        <div class="frame-parent72">
-          <div class="frame-wrapper3">
-            <div class="forum-content-parent">
-              <div class="forum-content">
-                <div class="ellipse-parent6">
-                  <div class="frame-child53"></div>
-                  <div class="frame-child54"></div>
-                  <div class="community-forum">Community Forum</div>
-                  <div class="we-time-to-time-set">
-                    We time-to-time set up a forum or discussion board where
-                    like-minded individuals share ideas, experiences, and
-                    questions related to sustainability. For you, we also
-                    encourage community interaction and engagement
-                  </div>
-                </div>
-              </div>
-              <div class="vector-parent2">
-                <img
-                  class="frame-child55"
-                  loading="lazy"
-                  alt=""
-                  src="./public/rectangle-22.svg"
-                />
-
-                <div class="events-calendar-wrapper">
-                  <div class="events-calendar">Events Calendar</div>
-                </div>
-                <div class="ellipse-parent7">
-                  <div class="frame-child56"></div>
-                  <div class="here-you-can">
-                    Here you can find highlight of eco-related events,
-                    workshops, webinars, and sustainability initiatives in your
-                    area or worldwide. Allow you to submit your own events as
-                    well.
-                  </div>
-                </div>
-              </div>
-              <div class="frame-parent73">
-                <div class="ellipse-parent8">
-                  <div class="frame-child53"></div>
-                  <div class="frame-child54"></div>
-                  <div class="community-forum">Educational Blogs</div>
-                  <div class="we-time-to-time-set">
-                    We maintain a blog with articles, guides, and tips on
-                    sustainable living, environmental issues, and product
-                    reviews. These are regularly updated content.
-                  </div>
-                </div>
-                <div class="ellipse-parent8">
-                  <div class="frame-child53"></div>
-                  <div class="frame-child54"></div>
-                  <div class="community-forum">Inspiration Gallery</div>
-                  <div class="we-time-to-time-set">
-                    Is where we showcase success stories, testimonials, and
-                    projects from individuals and organizations that have
-                    embraced sustainable living. Include photos and videos
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="rectangle-parent13">
-            <img
-              class="frame-child61"
-              loading="lazy"
-              alt=""
-              src="./public/rectangle-34@2x.png"
-            />
-
-            <div class="ellipse-parent10">
-              <div class="frame-child53"></div>
-              <div class="frame-child54"></div>
-              <div class="community-forum">Educational Blogs</div>
-              <div class="we-time-to-time-set">
-                We maintain a blog with articles, guides, and tips on
-                sustainable living, environmental issues, and product reviews.
-                These are regularly updated content.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
-
     <script>
       var frameContainer = document.getElementById("frameContainer");
       if (frameContainer) {
