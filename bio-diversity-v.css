@@ -121,15 +121,17 @@
 .create {
   text-transform: capitalize;
 }
-.e {
-  text-transform: lowercase;
-}
 .createedit-blogs {
   align-self: stretch;
+  color: white;
   position: relative;
-  font-weight: 200;
+  font-weight: 10;
   cursor: pointer;
   z-index: 1;
+}
+.edit{
+  align-self: center;
+  position: fixed;
 }
 .createedit-blogs-wrapper {
   width: 168px;
@@ -845,6 +847,7 @@
 }
 .delete-button {
   border-radius: var(--br-8xl-9);
+  color: #ffff;
   background-color: var(--color-gray-100);
   overflow: hidden;
   display: flex;
@@ -860,9 +863,9 @@
   font-size: var(--font-size-mini-5);
   font-family: var(--font-inter);
   color: var(--color-white);
-  text-align: left;
+  text-align: center;
   display: inline-block;
-  min-width: 118px;
+  width: 2px;
 }
 .action-buttons {
   cursor: pointer;
@@ -885,15 +888,7 @@
 .action-buttons:hover {
   background-color: var(--color-darkslategray-100);
 }
-.all-blog-posts {
-  position: relative;
-  font-size: var(--font-size-mini-5);
-  font-family: var(--font-inter);
-  color: var(--color-white);
-  text-align: left;
-  display: inline-block;
-  min-width: 94px;
-}
+
 .action-buttons1 {
   cursor: pointer;
   border: 0;
@@ -1077,7 +1072,7 @@
     flex-wrap: wrap;
   }
   .frame-parent7 {
-    gap: 36px;
+    gap: 236px;
     min-width: 100%;
   }
   .biodiversity-v1-inner {

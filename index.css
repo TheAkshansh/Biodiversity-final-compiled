@@ -1207,7 +1207,8 @@
   height: 30.5px;
   width: 69.7px;
 }
-.search2 {
+.search1 {
+  position: relative;
   font-size: var(--font-size-smi-9);
   line-height: 93.86%;
   text-transform: capitalize;

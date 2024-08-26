@@ -19,13 +19,6 @@
     <div class="biodiversity-v1">
       <div class="frame-parent">
         <img class="frame-child" alt="" src="./public/frame-1000005166.svg" />
-
-        <img
-          class="frame-item"
-          loading="lazy"
-          alt=""
-          src="./public/group-5@2x.png"
-        />
       </div>
       <div class="frame-group">
         <div class="frame-container">
@@ -117,9 +110,8 @@
         <div class="frame-parent8">
           <div class="createedit-blogs-wrapper">
             <div class="createedit-blogs" id="createeditBlogsText">
-              <span class="create">Create/</span>
-              <span class="e">E</span>
-              <span class="create">dit Blogs </span>
+              <span class="create">&#10688;Back</span>
+              
             </div>
           </div>
           <div class="frame-parent9">
@@ -166,9 +158,12 @@
 
                       <div class="mingcutetext-fill">
                         <img class="vector-icon" loading="lazy" alt="" />
-
+                        <button id="bold" class="option-button-format">
+                          <i class="fa-solid fa-bold"><b>B</b></i>
+                        </button>
                         <b class="b">B</b>
                       </div>
+                      
                     </div>
                   </div>
                   <div class="editor-toolbar">
@@ -391,23 +386,30 @@
               <div class="description-input">
                 <div class="text"></div>
               </div>
-              <div class="divider"></div>
+              
             </div>
           </div>
           <footer class="delete-button-parent">
-            <div class="delete-button">
+            <button id="butto" class="delete-button">
               <div class="delete-post">Delete Post</div>
-            </div>
+              <script type="text/javascript">
+                document.getElementById("butto").onclick = function () {
+                  window.location.href = "bio-diversity-v1.html";
+              };
+              </script>
+            </button>
             <div class="action-buttons-parent">
-              <button class="action-buttons">
+              <button id="buto" class="action-buttons">
                 <div class="discard-changes">Discard Changes</div>
-              </button>
-              <button class="action-buttons1">
-                <div class="all-blog-posts">All Blog Posts</div>
+                <script type="text/javascript">
+                  document.getElementById("buto").onclick = function () {
+                    window.location.href = "bio-diversity-v12.html";
+                };
+                </script>
               </button>
               <div class="submit-button-wrapper">
                 <button class="submit-button">
-                  <div class="submit-blog">Submit Blog</div>
+                  <div class="submit-blog">Submit Blog</div> <!--In backend-->
                 </button>
               </div>
             </div>
