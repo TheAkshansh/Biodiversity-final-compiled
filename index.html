@@ -345,7 +345,51 @@
             alt=""
             src="./public/group-1000005086-2.svg"
           />
-
+          <div class="footer-links">
+            <nav class="link-categories">
+              <button id="myutton" class="home-button">
+                <div class="home">Home</div>
+                <script type="text/javascript">
+                  document.getElementById("myutton").onclick = function () {
+                    window.location.href = "bio-diversity-v1.html";
+                };
+                </script>
+              </button>
+              <div class="link-categories-inner">
+                <div class="endangered-animal-predictor-wrapper">
+                  <div id="myButon" class="endangered-animal-predictor-container">
+                    <p class="endangered-animal">Endangered animal</p>
+                    <p class="zoom-in-to">predictor</p>
+                    <script type="text/javascript">
+                      document.getElementById("myButon").onclick = function () {
+                        window.location.href = "bio-diversity-v4.html";
+                    };
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="link-categories-child" id="frameContainer1">
+                <div class="donations-wrapper">
+                  <div class="donations">Donations</div>
+                </div>
+              </div>
+              <div class="link-categories-child" id="frameContainer2">
+                <div class="blogs-wrapper">
+                  <div class="blogs">Blogs</div>
+                </div>
+              </div>
+              <button class="link-categories-inner2" id="myButton">
+                <div class="about-us-wrapper">
+                  <div class="about-us">About Us</div>
+                  <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                      window.location.href = "bio-diversity-v3.html";
+                  };
+                  </script>
+                </div>
+              </button>
+            </nav>
+          </div>
           <div class="footer-navigation">
             <div class="footer-links1">
               <button class="home-link">
@@ -353,9 +397,14 @@
               </button>
               <div class="link-items-wrapper">
                 <div class="link-items">
-                  <div class="endangered-animal-predictor-container1">
+                  <class="endangered-animal-predictor-container1">
                     <p class="endangered-animal1">Endangered animal</p>
                     <p class="zoom-in-to1">predictor</p>
+                    <script type="text/javascript">
+                      document.getElementById("mybuton").onclick = function () {
+                        window.location.href = "bio-diversity-v4.html";
+                    };
+                    </script>
                   </div>
                 </div>
               </div>
@@ -393,7 +442,7 @@
             <div class="search1">Search</div>
           </div>
         </button>
-        <button class="auth-buttons">
+        <button id="but" class="auth-buttons">
           <a class="sign-in">Sign In</a>
         </button>
         <button class="signup-button">
