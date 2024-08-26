@@ -13,7 +13,6 @@ var subscriptButton = document.getElementById('subscript');
 var insertOrderedListButton = document.getElementById('insertOrderedList');
 var insertUnorderedListButton = document.getElementById('insertUnorderedList');
 var createLinkButton = document.getElementById('createLink');
-var formatBlockSelect = document.getElementById('formatBlock');
 var foreColorInput = document.getElementById('foreColor');
 var backColorInput = document.getElementById('backColor');
 var fileInput = document.getElementById('file');
@@ -37,18 +36,23 @@ fileInput.addEventListener('change', (e) => {
 });
 
 
-boldButton.addEventListener('click', () => execCommandReplacement()('bold'));
-italicButton.addEventListener('click', () => execCommandReplacement()('italic'));
-underlineButton.addEventListener('click', () => execCommandReplacement('underline'));
-strikethroughButton.addEventListener('click', () => execCommandReplacement('strikethrough'));
-superscriptButton.addEventListener('click', () => execCommandReplacement('superscript'));
-subscriptButton.addEventListener('click', () => execCommandReplacement('subscript'));
-insertOrderedListButton.addEventListener('click', () => execCommandReplacement('insertOrderedList'));
-insertUnorderedListButton.addEventListener('click', () => execCommandReplacement('insertUnorderedList'));
+boldButton.addEventListener('click', function() {
+    document.execCommand('bold');
+});
+
+italicButton.addEventListener('click', function() {
+    document.execCommand('italic');
+});
+underlineButton.addEventListener('click', () => document.execCommand('underline'));
+strikethroughButton.addEventListener('click', () => document.execCommand('strikethrough'));
+superscriptButton.addEventListener('click', () => document.execCommand('superscript'));
+subscriptButton.addEventListener('click', () => document.execCommand('subscript'));
+insertOrderedListButton.addEventListener('click', () => document.execCommand('insertOrderedList'));
+insertUnorderedListButton.addEventListener('click', () => document.execCommand('insertUnorderedList'));
 createLinkButton.addEventListener('click', () => {
     var url = prompt("Enter the URL:");
     if (url) {
-        execCommandReplacement('createLink', false, url);
+        document.execCommand('createLink', false, url);
     }
 });
 console.log(formatBlockSelect)
@@ -59,12 +63,13 @@ console.log(formatBlockSelect)
 //     document.execCommand('fontName', false, fontNameSelect.value);
 // });
 
-document.getElementById('foreColor').addEventListener('input', function() {
-    applyStyleToSelection('color', this.value);
+// 
+foreColorInput.addEventListener('change', function() {
+    document.execCommand('foreColor', false, foreColorInput.value);
 });
 
-document.getElementById('backColor').addEventListener('input', function() {
-    applyStyleToSelection('background-color', this.value);
+backColorInput.addEventListener('change', function() {
+    document.execCommand('backColor', false, backColorInput.value);
 });
 
 function applyStyleToSelection(styleName, value) {

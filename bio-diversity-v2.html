@@ -210,8 +210,13 @@
                   </div>
                 </div>
               </div>
-              <button class="donations-frame">
+              <button id="mButon" class="donations-frame">
                 <div class="donations3">Donations</div>
+                <script type="text/javascript">
+                  document.getElementById("mButon").onclick = function () {
+                    window.location.href = "bio-diversity-v2.html";
+                };
+                </script>
               </button>
               <div class="navigation-links-inner1" id="frameContainer2">
                 <div class="blogs-frame">
@@ -260,7 +265,7 @@
       var frameButton3 = document.getElementById("frameButton3");
       if (frameButton3) {
         frameButton3.addEventListener("click", function (e) {
-          // Please sync "BioDiversity V1" to the project
+          
         });
       }
       </script>

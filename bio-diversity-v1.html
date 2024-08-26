@@ -382,8 +382,13 @@
           </script>
           <div class="footer-links">
             <nav class="link-categories">
-              <button class="home-button">
+              <button id="myutton" class="home-button">
                 <div class="home">Home</div>
+                <script type="text/javascript">
+                  document.getElementById("myutton").onclick = function () {
+                    window.location.href = "bio-diversity-v1.html";
+                };
+                </script>
               </button>
               <div class="link-categories-inner">
                 <div class="endangered-animal-predictor-wrapper">
