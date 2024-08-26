@@ -382,9 +382,14 @@
               </button>
               <div class="link-categories-inner">
                 <div class="endangered-animal-predictor-wrapper">
-                  <div class="endangered-animal-predictor-container">
+                  <div id="myButon" class="endangered-animal-predictor-container">
                     <p class="endangered-animal">Endangered animal</p>
                     <p class="zoom-in-to">predictor</p>
+                    <script type="text/javascript">
+                      document.getElementById("myButon").onclick = function () {
+                        window.location.href = "bio-diversity-v4.html";
+                    };
+                    </script>
                   </div>
                 </div>
               </div>

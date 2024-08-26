@@ -1126,6 +1126,14 @@
   text-transform: capitalize;
   display: inline-block;
 }
+.endangered-animal-predictor-container:hover {
+  
+  cursor: pointer;
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+}
 .endangered-animal-predictor-wrapper,
 .link-categories-inner {
   display: flex;
